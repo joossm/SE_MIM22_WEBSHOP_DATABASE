@@ -16,14 +16,14 @@ services:
     ports:
       - "3306:3306"
 
-  server:
+  database:
     networks:
         - bookstore
     build: ./
-    container_name: go
-    working_dir: /SE_MIM22_WEBSHOP_MONO
+    container_name: database
+    working_dir: /SE_MIM22_WEBSHOP_DATABASE
     ports:
-      - "8080:8080"
+      - "8444:8444"
 
 networks:
   bookstore:
