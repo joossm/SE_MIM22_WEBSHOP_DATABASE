@@ -8,7 +8,7 @@ RUN go get -d -v ./...
 
 RUN go install -v ./...
 
-EXPOSE 8444
+EXPOSE 8450
 
 RUN go mod download
 

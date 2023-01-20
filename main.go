@@ -13,8 +13,10 @@ func main() {
 	log.Printf("\n\n\t" +
 		"DATABASESERVICE" +
 		"\n\n" +
-		"About to listen on 8450." +
+		"About to listen on Port: 8450." +
 		"\n" +
+		"\nSUPPORTED REQUESTS:" +
+		"\nGET:" +
 		"Go to http://127.0.0.1:8450/init to initialise the Database.")
 	server := &http.Server{
 		Addr:              ":8450",

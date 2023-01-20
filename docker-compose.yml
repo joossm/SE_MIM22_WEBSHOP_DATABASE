@@ -1,6 +1,7 @@
 #  --------------------------------------------------------------------------------
 version: '3.8'
 services:
+  # For the use in Docker only environment
   mysql:
     networks:
       - bookstore
@@ -23,7 +24,7 @@ services:
     container_name: database
     working_dir: /SE_MIM22_WEBSHOP_DATABASE
     ports:
-      - "8444:8444"
+      - "8450:8450"
 
 networks:
   bookstore:
