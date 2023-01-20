@@ -19,7 +19,7 @@ services:
 
   database:
     networks:
-        - bookstore
+      - bookstore
     build: ./
     container_name: database
     working_dir: /SE_MIM22_WEBSHOP_DATABASE
