@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d2fb3a0-9fae-4a00-a1de-efb1ca129d68" name="Changes" comment="reworked&#10;fixed lint errors&#10;should work">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/dockerfile" afterDir="false" />
-    </list>
+    <list default="true" id="2d2fb3a0-9fae-4a00-a1de-efb1ca129d68" name="Changes" comment="add README.md" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -57,7 +53,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Build.go build SE_MIM22_WEBSHOP_DATABASE">
+  <component name="RunManager" selected="Docker.docker-compose.yml: Compose Deployment">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="SE_MIM22_WEBSHOP_DATABASE" />
       <working_directory value="$PROJECT_DIR$" />
@@ -109,8 +105,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Build.go build SE_MIM22_WEBSHOP_DATABASE" />
         <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+        <item itemvalue="Go Build.go build SE_MIM22_WEBSHOP_DATABASE" />
         <item itemvalue="Docker.docker-compose.yml.database: Compose Deployment" />
       </list>
     </recent_temporary>
@@ -129,7 +125,7 @@
       <workItem from="1674137721927" duration="2630000" />
       <workItem from="1674145821524" duration="3635000" />
       <workItem from="1674294851410" duration="2000" />
-      <workItem from="1674294899638" duration="2789000" />
+      <workItem from="1674294899638" duration="3188000" />
     </task>
     <task id="LOCAL-00001" summary="Reworked">
       <created>1674139098672</created>
@@ -152,7 +148,28 @@
       <option name="project" value="LOCAL" />
       <updated>1674210613485</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="reworked&#10;fixed lint errors&#10;should work">
+      <created>1674298574715</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1674298574715</updated>
+    </task>
+    <task id="LOCAL-00005" summary="reworked&#10;fixed lint errors&#10;should work">
+      <created>1674298624128</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1674298624128</updated>
+    </task>
+    <task id="LOCAL-00006" summary="add README.md">
+      <created>1674298876679</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1674298876680</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,7 +189,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Reworked" />
     <MESSAGE value="reworked&#10;fixed lint errors&#10;should work" />
-    <option name="LAST_COMMIT_MESSAGE" value="reworked&#10;fixed lint errors&#10;should work" />
+    <MESSAGE value="add README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="add README.md" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
