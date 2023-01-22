@@ -2,6 +2,7 @@ package handler
 
 import (
 	"database/sql"
+	"encoding/json"
 	"fmt"
 	"log"
 	"net/http"
@@ -14,8 +15,7 @@ func InitDatabase(responseWriter http.ResponseWriter, request *http.Request) {
 	case "GET":
 		db := openDB()
 		defer closeDB(db)
-		fmt.Println("init db was executed")
-
+		fmt.Println("Initialization of the Database was executed")
 		_, err := db.Exec("CREATE TABLE IF NOT EXISTS `books` ( `Id` int(11) NOT NULL, `Titel` varchar(45) DEFAULT NULL, `EAN` varchar(45) DEFAULT NULL, `Content` varchar(45) DEFAULT NULL, `Price` float DEFAULT NULL, PRIMARY KEY (`Id`) ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;")
 		if err != nil {
 			log.Printf("Error creating table: %s", err)
@@ -28,12 +28,16 @@ func InitDatabase(responseWriter http.ResponseWriter, request *http.Request) {
 		if err != nil {
 			log.Printf("Error creating table: %s", err)
 		}
-		_, err = responseWriter.Write([]byte("SUCCESS"))
+		js, err := json.Marshal("Success")
 		errorHandler(err)
+		_, responseErr := responseWriter.Write(js)
+		errorHandler(responseErr)
 		return
 	default:
-		_, err := responseWriter.Write([]byte("THIS IS A GET REQUEST"))
+		js, err := json.Marshal("THIS IS A GET REQUEST")
 		errorHandler(err)
+		_, responseErr := responseWriter.Write(js)
+		errorHandler(responseErr)
 		return
 	}
 }
